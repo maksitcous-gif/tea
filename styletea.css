@@ -3,16 +3,15 @@
     margin: 0;
     padding: 0;
 }
-body {
-    display: flex;
+body 
+{display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    min-height: 100vh;
     background: rgba(0, 0, 0, 0.7) url("tea.jpg") center center fixed;
     background-size: cover;
     background-blend-mode: darken;
     font-family: Arial, Helvetica, sans-serif;
 }
+    
 .container {
     display: flex;
     align-items: center;
@@ -56,6 +55,7 @@ body {
     box-shadow: 0 0 5px white;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 .navbar ul li{ 
     display: inline-block;
@@ -80,7 +80,7 @@ body {
 .navbar ul li a:hover {
     box-shadow: 0 0 10px white;
     background-color: white;
-    color: thistle;
+    color: black;
     padding: 10px;
 
 }
@@ -101,9 +101,13 @@ body {
     font-size: 50px; 
     color: white;
     padding: 10px;
-    margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
     box-shadow: 10px;
+    margin-top: 50px;
+    border: 1 solid;
+    background: local;
+    text-decoration: underline;
+    
   
     
   
@@ -111,12 +115,14 @@ body {
 .rich-and-vibe {
     align-items: flex-start;
     color: white;
-    margin-left: 0px;
+    margin-left: 10px;
     width: 10px;
     padding-right: 50px;
 }
 .par {
-font-size: 30px;
+font-size: 20px;
+margin-left: 10px;
+
 }
 
 
@@ -124,13 +130,15 @@ font-size: 30px;
 
 .wrapper {
     display: flex;
-    justify-content: end;
-    height: 250px;
+    display: flex-end;
+    height: 300px;
     margin-right: 50px;
     width: 520;
     background: rgb(22, 27, 22);
     color: white;
     border-radius: 10px;
+    margin-top: 150px;
+    margin-right: -250px;
     
 
 }
@@ -148,14 +156,20 @@ font-size: 30px;
     text-align: center;
 }
 .wrapper .input-box {
-    width: 150px;
+    width: 250px;
     height: 30px;
     background: white;
     margin: 30px;
 
 }
+.login {
+    margin-top: 10px;
+   margin-left: 10px;
+   font-size: 1000;
+
+}
 .input-box input {
-    width: 150px;
+    width: 250px;
     height: 30px;
     background: transparent;
     border: none;
@@ -172,12 +186,23 @@ font-size: 30px;
     color:white;
     padding: 10px;
     margin-top: 10px;
+    padding: 10px;
+    gap: 5PX;
+    justify-content: space-between;
     
 
 }
-
-
-
+.btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(241, 6, 6);
+    font-weight: bold;
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 2px;
+    border-radius: 5px;
+    
+   
+}
 
 .tea-image {
     size: 100px;
@@ -231,3 +256,11 @@ footer .left {
     
 
 } 
+.btnn {
+    position:absolute;
+    right: 170px;
+    top: 70%;
+
+}
+
+
