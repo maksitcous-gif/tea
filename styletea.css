@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.7) url("tea.jpg") center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position:fixed;
+    width: 100%;
+    top: 0;
+    height: 70px;
+
+
+}
+.container:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: white 0 0 10px;
+}
+.container .h1 { 
+    color: white;
+    margin-left: 20px;
+}
+.container:hover .h1 {
+    text-shadow: 0 0 10px white;
+    box-shadow: 0 0 10px white;
+}
+.TEA {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: thistle;
+    margin-left: 20px;
+    padding: 3px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.TEA:hover {
+    text-shadow: 0 0 10px white;
+    box-shadow: 0 0 5px white;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar ul li{ 
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 20px;
+  
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: all 0.3s ease;
+    border: -1px solid rgb(95, 135, 177);
+    border-radius: 10px;
+    
+
+    
+}
+.navbar ul li a:hover {
+    box-shadow: 0 0 10px white;
+    background-color: white;
+    color: thistle;
+    padding: 10px;
+
+}
+.content {
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 30px;
+    justify-content: space-between;
+}
+.content h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+.welcome {
+    text-align: left;
+    font-size: 50px; 
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    box-shadow: 10px;
+  
+    
+  
+}
+.rich-and-vibe {
+    align-items: flex-start;
+    color: white;
+    margin-left: 0px;
+    width: 10px;
+    padding-right: 50px;
+}
+.par {
+font-size: 30px;
+}
+
+
+
+
+.wrapper {
+    display: flex;
+    justify-content: end;
+    height: 250px;
+    margin-right: 50px;
+    width: 520;
+    background: rgb(22, 27, 22);
+    color: white;
+    border-radius: 10px;
+    
+
+}
+.wrapper:hover {
+  color: white;
+  background: none;
+  border: 1px solid;
+  mix-blend-mode: color;
+  pointer-events:all;
+
+  
+}
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .input-box {
+    width: 150px;
+    height: 30px;
+    background: white;
+    margin: 30px;
+
+}
+.input-box input {
+    width: 150px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid;
+}
+.wrapper:hover {
+    mix-blend-mode: lighten;
+
+}
+.rememberforgot {
+    width: 50;
+    height: 30px;
+    color:white;
+    padding: 10px;
+    margin-top: 10px;
+    
+
+}
+
+
+
+
+.tea-image {
+    size: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: scale(1).0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 1000px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(0.8);  
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+
+}
+.tea-image:hover {
+    transform: scale3d(0,9); 
+    box-shadow: 0 0 15px white;
+    filter: brightness(1);
+    mix-blend-mode: lighten;
+    cursor: pointer;
+   height: 250px;
+    width: 250px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 40px;
+}
+footer .left {
+    float: center;
+    margin-left: 20px;
+    font-size: 14px;
+    color: white;
+    
+
+} 
