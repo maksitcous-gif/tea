@@ -1,0 +1,117 @@
+/* 
+body
+container
+card 
+card-icon
+card-title
+card-description
+learn-more-btn
+sedan
+suv
+luxury
+
+
+
+ */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    max-width: 920px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-icon {
+    margin-bottom: rem;
+}
+
+
+.card-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f2f2f2;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.card-description {
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 5rem;
+    flex-grow: 1;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.learn-more-btn {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.learn-more-btn:hover {
+    background-color: transparent;
+    color: #f2f2f2;
+
+}
+
+.sedan {
+    background-color: #e38826;
+}
+
+.sedan .learn-more-btn {
+    color: #c4b8ac;
+}
+
+.suv {
+    background-color: #006970;
+}
+
+.suv .learn-more-btn {
+    color: #a9c8c9;
+}
+
+.luxury {
+    background-color: #004241;
+    
+}
+
+.luxury .learn-more-btn {
+    color: #6d9a99;
+}
+
+
+

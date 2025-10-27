@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+}
+
+.overlay {
+    background-color: white;
+    width: 500%;
+    max-width: 900px;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.15);
+    position: relative;
+    border: 1px solid;
+    
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-pic-container {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f5f5f5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic :hover {
+    cursor: pointer;
+    box-shadow: black;
+}
+.bio {
+    flex: 2;
+    min-width: 300px;
+}
+
+.bio h2 {
+    color: #444;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.bio p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.skills {
+    margin-bottom: 40px;
+}
+
+.skills h2 {
+    color: #444;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.skill-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    background-color: #f0f0f0;
+    box-shadow: #ffffff;
+    border: 1px solid rgb(0, 0, 0);
+    text-decoration: dashed;
+    cursor: pointer;
+    
+    
+}
+
+.contact {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.contact h2 {
+    color: #444;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #000000;
+    
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .overlay {
+        padding: 20px 20px;
+    }
+}
+.footer h1 .facebook {
+    height: 5px;
+    width: 5px;
+}
